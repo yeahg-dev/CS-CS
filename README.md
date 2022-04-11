@@ -1,1 +1,34 @@
-# Computer Science, Command + Shift : 
+# 💻 Computer Science, `Command` + `Shift` : 운영체제편
+<img width="964" alt="스크린샷 2022-04-11 오후 7 24 24" src="https://user-images.githubusercontent.com/81469717/162721238-a5ee143b-d8e4-49b8-8010-78a5b37cae61.png">
+
+## 스터디원
+[고사리🌿](https://github.com/gogosilver)
+[나무🌳](https://github.com/jsim27)
+[릴리🌸](https://github.com/yeahg-dev)
+[호랭이🐯](https://github.com/horeng2)
+
+<br>
+
+## 스터디 방법
+- 기간 : 2022.4.11 ~ 2022.5.11
+- 학습 자료: [운영체제 - 이화여대 반효경 교수](http://www.kocw.net/home/search/kemView.do?kemId=1046323)
+- 매주 월,수,금 모여서 함께 강의를 듣습니다.
+- 강의 중 궁금한 내용, 이해가지 않는 부분, 토론해보고 싶은 주제에 대해 자유롭게 이야기합니다.
+- 함께 이야기한 내용을 정리해서 레포에 푸시합니다
+- 각자 강의를 들으며 정리한 내용을 레포에 푸시합니다.
+
+## 목차
+|                 Chapter                 |  진행일  | 🤔Q&A | 고사리 | 나무 | 릴리 | 호랭이 |
+| :-------------------------------------: | :------: | :--: | :----: | :--: | :--: | :----: |
+|  1. Introduction to Oprerating Systems  |   4/11   |      |        |      |      |        |
+| 2. System Structure & Program Execution |   4/13   |      |        |      |      |        |
+|               3. Process                |   4/15   |      |        |      |      |        |
+|          4. Process Management          |   4/18   |      |        |      |      |        |
+|            5. CPU Scheduling            | 4/20, 22 |      |        |      |      |        |
+|       6. Process Synchronization        | 4/25, 27 |      |        |      |      |        |
+|              7. Deadlocks               |   4/29   |      |        |      |      |        |
+|          8. Memory Management           |  5/2, 4  |      |        |      |      |        |
+|            9. Virtual Memory            |   5/6    |      |        |      |      |        |
+|             10. File System             |   5/9    |      |        |      |      |        |
+|   11. Disk Management and Scheduling    |   5/11   |      |        |      |      |        |
+
