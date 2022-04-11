@@ -20,7 +20,7 @@
 ## 목차
 |                 Chapter                 |  진행일  | Q&A | 고사리 | 나무 | 릴리 | 호랭이 |
 | :-------------------------------------: | :------: | :--: | :----: | :--: | :--: | :----: |
-| 2. System Structure & Program Execution |   4/13   |   [🤔](https://github.com/yeahg-dev/CS-CS/blob/main/chapter01-Introduicing-operation-system/Q%26A.md)   |   [🌿](https://github.com/yeahg-dev/CS-CS/blob/main/chapter01-Introduicing-operation-system/GOSARI.md)    |      |   [🌸]( https://github.com/yeahg-dev/CS-CS/blob/fef15198ac1bac48eac0843bf05df20348bec881/chapter01-Introduicing-operation-system/lily-01-introducing-operation-system.md)   |        |
+| 2. System Structure & Program Execution |   4/13   |   [🤔](https://github.com/yeahg-dev/CS-CS/blob/main/chapter01-Introduicing-operation-system/Q%26A.md)   |   [🌿](https://github.com/yeahg-dev/CS-CS/blob/main/chapter01-Introduicing-operation-system/GOSARI.md)    |   [🌳](https://github.com/yeahg-dev/CS-CS/blob/main/chapter01-Introduicing-operation-system/namu.md)   |   [🌸]( https://github.com/yeahg-dev/CS-CS/blob/fef15198ac1bac48eac0843bf05df20348bec881/chapter01-Introduicing-operation-system/lily-01-introducing-operation-system.md)   |    [🐯](https://github.com/yeahg-dev/CS-CS/blob/main/chapter01-Introduicing-operation-system/horeng2.md)   |
 |               3. Process                |   4/15   |      |        |      |      |        |
 |          4. Process Management          |   4/18   |      |        |      |      |        |
 |            5. CPU Scheduling            | 4/20, 22 |      |        |      |      |        |
