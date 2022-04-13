@@ -6,8 +6,6 @@
 
 ## 컴퓨터 시스템 구조
 
-![image](https://user-images.githubusercontent.com/72993238/163132618-5cb31be2-212c-4c3c-a7c3-a91c038abd47.png)
-
 ![image](https://user-images.githubusercontent.com/72993238/163132753-dbb2841f-daec-409b-b9d3-6f15a5096862.png)
 
 컴퓨터 → { CPU와 메모리 } 이를 호스트라고도 한다.
