@@ -1,1 +1,26 @@
-Chapter2. System Structure & Program Execution
+# Chapter4. Process Management
+
+## 부모 프로세스가 자식 프로세스를 생성하는 예시는?
+
+[fork | Apple Developer Documentation](https://developer.apple.com/documentation/dispatch/dispatchsource/processevent/1780551-fork)
+
+[[Swift] Process 클래스로 다른 Application 실행 / 프로세스 제어하기](https://sweetday-alice.tistory.com/170)
+
+[리눅스 환경에서 fork() 함수를 이용한 자식 프로세스 생성하기](https://kim-hoya.tistory.com/7)
+
+프로세스 실행 중에 다른 프로그램을 실행시키는 경우인 것 같다.
+
+→ 하지만 이는 부모-자식관계와 상충되어 보인다. 왜냐하면 다른 프로그램간에는 코드를 공유하고 있지 않기 때문에 메모리 영역을 복사한다는 것이 이해가 어렵다.. (호랭이 헬프,,)
+
+- 동일 프로그램을 실행시키는 것이라면 굳이 프로세스를 생성해야할까? 스레드가 더 비용적으로 효율적인데
+- 쇼핑어플에서 결제 어플을 실행시키는 것과 같은 상황이 이에 해당할까?
+
+## 프로세스간 협력이 일어나는  iOS에서 예시는?
+
+예를 들어 이미지 피커 컨트롤러를 사용하는 경우를 생각해보자. 이미지 피커 또한 iOS가 제공하는 API이기 때문에 핸드폰 내 자체적으로 이미지 피커 프로그램이 있을것이라 생각해보자. 이때 앱이 이미지 피커를 실행하는 새로운 프로세스를 포크(생성)하고, 이미지 피커의 리턴 값을 메시지로 전달하는 협력이 있을 것이라고 추측해보았다.
+
+### 프로세스간 협력은 부모와 자식사이에서만 일어나는 것일까?
+
+
+## 뷰 드로잉사이클마다 interrupt를 걸까?
+- 드로잉사이클 관리하는 애가 OS의 메인스레드이냐 아니면 I/O 일까?
