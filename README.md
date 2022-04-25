@@ -1,4 +1,4 @@
-# 💻 Computer Science, `Command` + `S` : 운영체제편
+# 💻 `C`omputer `S`cience, `C`ommand + `S` : 운영체제편
 <img width="964" alt="스크린샷 2022-04-11 오후 7 24 24" src="https://user-images.githubusercontent.com/81469717/162721238-a5ee143b-d8e4-49b8-8010-78a5b37cae61.png">
 
 ## 스터디원
