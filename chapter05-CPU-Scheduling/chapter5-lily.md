@@ -116,3 +116,86 @@ CPU burst time이 가장 짧은 프로세스를 제일 먼저 스케줄함
 - 할당시간이 지나면 프로세스는 선점당하고, ready queue의 제일 뒤로 가서 다시 줄을 섬
 - 장점: response time이 짧음
     - 어떤 프로세스도 (n-1)q time unit이상 기다리지 않음
+
+---
+### 5. Multilevel Queue
+- Ready queue를 여러 개로 분할
+- CPU에 사용가능한 자리가 나면 우선순위가 높은 큐부터 프로세스를 디큐하여 스케줄링
+- 큐간에 이동이 불가
+- 우선순위가 낮은 큐는 평생 CPU를 못 얻을 수 있음 (기아현상) 
+➡️ 개선한 알고리즘 : Multilevel Feedback Queue
+
+><높은 우선 순위>
+>- `system processes`
+>- `interactive processes`
+>- `interactive editing processes`
+>- `batch processes` (CPU만 오래 사용하는 프로세스)
+>- `student processes`
+>
+><낮은 우선 순위>
+
+><두개의 큐로 분류하는 방법>
+> - foreground (interactive)
+> - background (batch - no human interaction)
+
+- 각 큐는 독립적인 스케줄링 알고리즘을 가짐
+    - foreground - RR
+    - background - FCFS
+- 큐에 대한 스케줄링이 필요
+    1. CPU를 어떤 큐에 줄 것인지
+    2. 큐에 있는 프로세스 중 누구에게 사용권을 줄 것인지
+
+---
+### 6. Mulitlevel Feedback Queue
+- 프로세스가 큐간에 이동이 가능
+
+일반적인 방식 :
+- 처음 들어오는 프로세스는 일단 우선순위 가장 높은 큐로 넣음. 우선순위가 높은 큐일수록 할당시간이 짧음. 할당된 시간 내에 프로세스가 완료되지 못할 경우, 아래 큐로 강등됨. (CPU사용시간이 짧은 I/O burst 잡의 경우 많이 기다리지 않고 바로바로 실행될 수 있음)
+- 위의 큐가 빌 때만 아래 큐를 실행
+
+## 4. 다양한 상황에서의 CPU Scheduling
+### Multi-Processor Scheduling
+- **Homogeneous processor(동등한 프로세서?)인 경우**
+    - Queue에 한줄로 세워서 각 프로세서가 알아서 꺼내가게 할 수 있다
+    - 반드시 특정 프로세서에서 수행되어야 하는 프로세스의 경우 복잡해짐
+- **Load Sharing**
+    - 일부 프로세서에 Job이 몰리지 않도록 하는 메커니즘이 필요
+    - 프로세서 내 별개의 큐를 두는 방법 vs 공동 큐를 사용하는 방법
+- **Symmetric Multiprocessing(SMP)**
+    - 각각의 프로세스가 동등한 지위
+    - 각 프로세서가 각자 알아서 스케줄링 결정
+- **Asymmetric Multiprocessing**
+    - 하나의 프로세서가 다른 프로세서까지 관리
+    - 하나의 프로세서가 시스템 데이터의 접근과 공유를 책임지고 나머지 프로세서는 거기에 따름
+
+### Real-Time Scheduling
+데드라인을 보장해야하는 job을 다룰 때 사용하는 스케줄링,
+주기적으로 update되어야하는 job이 여기에 해당
+- **Hard real-time systems**
+    정해진 시간 안에 반드시 끝내도록 스케줄링 해야함
+    
+- **Soft real-time computing**  
+    일반 프로세스에 비해 높은 priority를 갖도록 해야 함
+
+### Thread Scheduling
+스레드를 구현하는 방법 2가지
+
+- **Local Scheduling**
+    - User level thread, 운영체제는 스레드의 존재를 모름
+    - 어떤 스레드에게 CPU를 줄지 프로세스가 결정함
+- **Global Scheduling**
+    - Kenrel level thread, 운영체제가 스레드 존재를 알고잇음
+    - 일반 프로세스와 마찬 가지로 커널의 단기 스케줄러가 어떤 스레드를 스케줄링할 지 결정
+
+
+## 7. 알고리즘 평가
+- **Queueing models**
+    - 확률 분포로 주어지는 arrival rate와 service rate등을 통해 각종 performance index 값을 계산
+    - 예전에 많이 사용한 방법, 이론적으로 사용
+- I**mplementaion(구현)과 Measurement(성능 측정)**
+    - 실제 시스템에 알고리즘 구현하여 실제 작업에 대해서 성능을 측정 비교
+    - 기존의 운영체제의 소스코드를 수정하기 때문에 실제로 구현하기 어려움
+- **Simulation(모의 실험)**
+    - 알고리즘을 모의 프로그램으로 작성 후 trace를 입력으로 하여 결과 비교
+    - trace: 실제 프로그램으로 추출한 인풋 데이터
+
