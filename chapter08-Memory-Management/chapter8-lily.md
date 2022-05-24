@@ -268,7 +268,7 @@ page table의 각 entry마다 저장되어 있는 부가적 정보
 ### 2️⃣ Segmentation
 
 > 주소공간을 의미 단위로 자름 (예를 들어, 코드/데이터/스택, 함수단위)
-> 
+
 
 크기가 균일하지 않음 
 
@@ -308,3 +308,19 @@ page table의 각 entry마다 저장되어 있는 부가적 정보
 
 - shared segment
 - same segment number
+
+> 💡 테이블의 메모리 사용량은 Segment방식이 Paging기법보다 적음
+
+<br>
+
+### 3️⃣ Segmentation with Paging 
+segment를 여러개의 Page로 구성되는 기법
+
+<br>
+
+---
+### 메모리 관리에서 운영체제가 하는 역할은?
+주소변환에 운영체제가 하는 역할이 없음.
+
+모두 하드웨어가 해야하는 역할임.
+
